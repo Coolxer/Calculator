@@ -15,7 +15,7 @@
    <children>
       <Pane layoutX="20.0" layoutY="25.0" prefHeight="50.0" prefWidth="280.0" style="-fx-border-color: #0099ff; -fx-border-width: 3; -fx-border-radius: 50;">
          <children>
-            <JFXTextField fx:id="numbersField" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="-11.0" prefHeight="72.0" prefWidth="246.0" promptText="23.1234" style="-fx-text-fill: #FFFFFF;">
+            <JFXTextField fx:id="numbersField" alignment="CENTER_RIGHT" layoutX="13.0" layoutY="-11.0" prefHeight="72.0" prefWidth="246.0" style="-fx-text-fill: #FFFFFF;" text="0">
                <font>
                   <Font name="Haettenschweiler" size="42.0" />
                </font></JFXTextField>
@@ -74,7 +74,7 @@
                   <Font name="Haettenschweiler" size="22.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="minus" buttonType="RAISED" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" onAction="#onMultiParametersCalculationButtonClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: #0099ff; -fx-border-width: 3; -fx-border-radius: 3;" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <JFXButton fx:id="minus" buttonType="RAISED" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" onAction="#onMultiParametersCalculationButtonClicked" prefHeight="50.0" prefWidth="50.0" textFill="#333333" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font name="Haettenschweiler" size="22.0" />
                </font>
@@ -89,7 +89,7 @@
                   <Font name="Haettenschweiler" size="22.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="multiply" buttonType="RAISED" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" onAction="#onMultiParametersCalculationButtonClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: #0099ff; -fx-border-width: 3; -fx-border-radius: 3;" text="x" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <JFXButton fx:id="multiply" buttonType="RAISED" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" onAction="#onMultiParametersCalculationButtonClicked" prefHeight="50.0" prefWidth="50.0" textFill="#333333" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font name="Haettenschweiler" size="22.0" />
                </font>
@@ -104,7 +104,7 @@
                   <Font name="Haettenschweiler" size="22.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="divide" buttonType="RAISED" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" onAction="#onMultiParametersCalculationButtonClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: #0099ff; -fx-border-width: 3; -fx-border-radius: 3;" text="/" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <JFXButton fx:id="divide" buttonType="RAISED" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" onAction="#onMultiParametersCalculationButtonClicked" prefHeight="50.0" prefWidth="50.0" text="/" textFill="#333333" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font name="Haettenschweiler" size="22.0" />
                </font>
@@ -147,6 +147,9 @@
                   <Font name="Haettenschweiler" size="32.0" />
                </font>
             </JFXButton>
+            <FontAwesomeIcon fill="WHITE" iconName="TIMES_CIRCLE" size="50" translateX="5.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <FontAwesomeIcon fill="WHITE" iconName="MINUS_CIRCLE" size="50" translateX="5.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <FontAwesomeIcon fill="WHITE" iconName="EXCLAMATION_CIRCLE" size="50" translateX="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <JFXButton fx:id="sin" buttonType="RAISED" layoutX="50.0" layoutY="104.0" onAction="#onSingleParameterButtonClicked" prefWidth="50.0" style="-fx-background-color: #0099ff;" text="sin">

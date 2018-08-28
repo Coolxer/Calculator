@@ -10,6 +10,9 @@ public class MainWindowController{
     @FXML
     private JFXTextField numbersField;
 
+    @FXML
+    private JFXButton seven7Button;
+
     private double x, y;
     private double result;
     private String operation;
